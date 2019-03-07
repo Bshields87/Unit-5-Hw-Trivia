@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=BenchNine|Srisakdi:700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -14,174 +15,176 @@
 
     <div class="container">
 
-        <header>Trivia Time</header>
+            <div id="contents">
+                    <div id="head">Fun Food Facts</div>
+                <div id="counter"></div>
+    
+                <div id="correct">Correct: </div>
+                <p id="correctscore"></p>
+    
+    
+                <div id="incorrect">Incorrect: </div>
+                <p id="incorrectscore"></p>
+            </div>
         <button id="toggle">Let's Play!</button>
-
-        <div id="counter"></div>
-
-        <div id="correct">Correct: </div>
-            <p id="correctscore"></p>
         
-        
-        <div id="incorrect">Incorrect: </div>
-            <p id="incorrectscore"></p>
-        
-        <div id="quiz">
-            <div id="question1">How many rows does the average ear of corn have?
-            </div>
-            <div id="answers1">
-                <input class="incorrect" type="radio" name="answers1" id="answers1a">
-                <label class="radio-inline" for="answers1">
-                    13
-                </label>
-                <input class="incorrect" type="radio" name="answers1" id="answers1b">
-                <label class="radio-inline" for="answers1">
-                    10
-                </label>
-                <input class="incorrect" type="radio" name="answers1" id="answers1c">
-                <label class="radio-inline" for="answers1">
-                    7
-                </label>
-                <input class="correct" type="radio" name="answers1" id="answers1d">
-                <label class="radio-inline" for="answers1">
-                    16
-                </label>
-            </div>
-            <div id="question2">Ortharexia Nervosa is an eating disorder where the sufferer is obsessed with eating
-                what?
-            </div>
-            <div id="answers2">
-                <input class="incorrect" type="radio" name="answers2" id="answers2a">
-                <label class="radio-inline" for="answers2">
-                    Chicken Bones
-                </label>
-                <input class="incorrect" type="radio" name="answers2" id="answers2b">
-                <label class="radio-inline" for="answers2">
-                    Uncooked Pasta
-                </label>
-                <input class="incorrect" type="radio" name="answers2" id="answers2c">
-                <label class="radio-inline" for="answers2">
-                    Pig Feet
-                </label>
-                <input class="correct" type="radio" name="answers2" id="answers2d">
-                <label class="radio-inline" for="answers2">
-                    Healthy Food
-                </label>
-            </div>
-            <div id="question3">A pearl will dissolved if placed in this substance.</div>
-            <div id="answers3">
-                <input class="correct" type="radio" name="answers3a" id="answers3a">
-                <label class="radio-inline" for="answers3">
-                    Vinegar
-                </label>
-                <input class="incorrect" type="radio" name="answers3b" id="answers3b">
-                <label class="radio-inline" for="answers3">
-                    Bleach
-                </label>
-                <input class="incorrect" type="radio" name="answers3c" id="answers3c">
-                <label class="radio-inline" for="answers3">
-                    Orange Juice
-                </label>
-                <input class="incorrect" type="radio" name="answers3d" id="answers3d">
-                <label class="radio-inline" for="answers3">
-                    Wine
-                </label>
-            </div>
-            <div id="question4">In Kentucky it is illegal to carry this in your back pocket.</div>
-            <div id="answers4">
-                <input class="incorrect" type="radio" name="answers4a" id="answers4a">
-                <label class="radio-inline" for="answers4">
-                    Pretzels
-                </label>
-                <input class="correct" type="radio" name="answers4b" id="answers4b">
-                <label class="radio-inline" for="answers4">
-                    Ice Cream Cone
-                </label>
-                <input class="incorrect" type="radio" name="answers4c" id="answers4c">
-                <label class="radio-inline" for="answers4">
-                    Bubblegum
-                </label>
-                <input class="incorrect" type="radio" name="answers4d" id="answers4d">
-                <label class="radio-inline" for="answers4">
-                    Peach Pits
-                </label>
-            </div>
-            <div id="question5">Which month is national pasta month?</div>
-            <div id="answers5">
-                <input class="incorrect" type="radio" name="answers5a" id="answers5a">
-                <label class="radio-inline" for="answers5">
-                    December
-                </label>
-                <input class="incorrect" type="radio" name="answers5b" id="answers5b">
-                <label class="radio-inline" for="answers5">
-                    June
-                </label>
-                <input class="incorrect" type="radio" name="answers5c" id="answers5c">
-                <label class="radio-inline" for="answers5">
-                    March
-                </label>
-                <input class="correct" type="radio" name="answers5d" id="answers5d">
-                <label class="radio-inline" for="answers5">
-                    October
-                </label>
-            </div>
-            <div id="question6"> What is the least favorite pizza topping in America?</div>
-            <div id="answers6">
-                <input class="incorrect" type="radio" name="answers6" id="answers6a">
-                <label class="radio-inline" for="answers6">
-                    Pineapple
-                </label>
-                <input class="incorrect" type="radio" name="answers6" id="answers6b">
-                <label class="radio-inline" for="answers6">
-                    Peas
-                </label>
-                <input class="correct" type="radio" name="answers6" id="answers6c">
-                <label class="radio-inline" for="answers6">
-                    Anchovies
-                </label>
-                <input class="incorrect" type="radio" name="answers6" id="answers6d">
-                <label class="radio-inline" for="answers6">
-                    Sausage
-                </label>
-            </div>
-            <div id="question7">There is a part of the human brain used specifically for detecting this smell.</div>
-            <div id="answers7">
-                <input class="correct" type="radio" name="answers7" id="answers7a">
-                <label class="radio-inline" for="answers7">
-                    Burning Toast
-                </label>
-                <input class="incorrect" type="radio" name="answers7" id="answers7b">
-                <label class="radio-inline" for="answers7">
-                    Baking Bread
-                </label>
-                <input class="incorrect" type="radio" name="answers7" id="answers7c">
-                <label class="radio-inline" for="answers7">
-                    Garlic
-                </label>
-                <input class="incorrect" type="radio" name="answers7" id="answers7d">
-                <label class="radio-inline">
-                    Fried Chicken
-                </label>
-            </div>
-            <div id="question8">What was margarine clled when it was first introduced in England</div>
-            <div id="answers8">
-                <input class="incorrect" type="radio" name="answers8" id="answers8a">
-                <label class="radio-inline" for="answers8">
-                    Marge
-                </label>
-                <input class="incorrect" type="radio" name="answers8" id="answers8b">
-                <label class="radio-inline" for="answers8">
-                    Move Over Butter
-                </label>
-                <input class="correct" type="radio" name="answers8" id="answers8c">
-                <label class="radio-inline" for="answers8">
-                    Butterine
-                </label>
-                <input class="incorrect" type="radio" name="answers8" id="answers8d">
-                <label class="radio-inline" for="answers8">
-                    Oleo
-                </label>
-            </div>
+            <div id="quiz">
+                <div id="question1">How many rows does the average ear of corn have?
+                </div>
+                <div id="answers1">
+                    <input class="incorrect" type="radio" name="answers1" id="answers1a">
+                    <label class="radio-inline" for="answers1">
+                        13
+                    </label>
+                    <input class="incorrect" type="radio" name="answers1" id="answers1b">
+                    <label class="radio-inline" for="answers1">
+                        10
+                    </label>
+                    <input class="incorrect" type="radio" name="answers1" id="answers1c">
+                    <label class="radio-inline" for="answers1">
+                        7
+                    </label>
+                    <input class="correct" type="radio" name="answers1" id="answers1d">
+                    <label class="radio-inline" for="answers1">
+                        16
+                    </label>
+                </div>
+                <div id="question2">Ortharexia Nervosa is an eating disorder where the sufferer is obsessed with eating
+                    what?
+                </div>
+                <div id="answers2">
+                    <input class="incorrect" type="radio" name="answers2" id="answers2a">
+                    <label class="radio-inline" for="answers2">
+                        Chicken Bones
+                    </label>
+                    <input class="incorrect" type="radio" name="answers2" id="answers2b">
+                    <label class="radio-inline" for="answers2">
+                        Uncooked Pasta
+                    </label>
+                    <input class="incorrect" type="radio" name="answers2" id="answers2c">
+                    <label class="radio-inline" for="answers2">
+                        Pig Feet
+                    </label>
+                    <input class="correct" type="radio" name="answers2" id="answers2d">
+                    <label class="radio-inline" for="answers2">
+                        Healthy Food
+                    </label>
+                </div>
+                <div id="question3">A pearl will dissolved if placed in this substance.</div>
+                <div id="answers3">
+                    <input class="correct" type="radio" name="answers3a" id="answers3a">
+                    <label class="radio-inline" for="answers3">
+                        Vinegar
+                    </label>
+                    <input class="incorrect" type="radio" name="answers3b" id="answers3b">
+                    <label class="radio-inline" for="answers3">
+                        Bleach
+                    </label>
+                    <input class="incorrect" type="radio" name="answers3c" id="answers3c">
+                    <label class="radio-inline" for="answers3">
+                        Orange Juice
+                    </label>
+                    <input class="incorrect" type="radio" name="answers3d" id="answers3d">
+                    <label class="radio-inline" for="answers3">
+                        Wine
+                    </label>
+                </div>
+                <div id="question4">In Kentucky it is illegal to carry this in your back pocket.</div>
+                <div id="answers4">
+                    <input class="incorrect" type="radio" name="answers4a" id="answers4a">
+                    <label class="radio-inline" for="answers4">
+                        Pretzels
+                    </label>
+                    <input class="correct" type="radio" name="answers4b" id="answers4b">
+                    <label class="radio-inline" for="answers4">
+                        Ice Cream Cone
+                    </label>
+                    <input class="incorrect" type="radio" name="answers4c" id="answers4c">
+                    <label class="radio-inline" for="answers4">
+                        Bubblegum
+                    </label>
+                    <input class="incorrect" type="radio" name="answers4d" id="answers4d">
+                    <label class="radio-inline" for="answers4">
+                        Peach Pits
+                    </label>
+                </div>
+                <div id="question5">Which month is national pasta month?</div>
+                <div id="answers5">
+                    <input class="incorrect" type="radio" name="answers5a" id="answers5a">
+                    <label class="radio-inline" for="answers5">
+                        December
+                    </label>
+                    <input class="incorrect" type="radio" name="answers5b" id="answers5b">
+                    <label class="radio-inline" for="answers5">
+                        June
+                    </label>
+                    <input class="incorrect" type="radio" name="answers5c" id="answers5c">
+                    <label class="radio-inline" for="answers5">
+                        March
+                    </label>
+                    <input class="correct" type="radio" name="answers5d" id="answers5d">
+                    <label class="radio-inline" for="answers5">
+                        October
+                    </label>
+                </div>
+                <div id="question6"> What is the least favorite pizza topping in America?</div>
+                <div id="answers6">
+                    <input class="incorrect" type="radio" name="answers6" id="answers6a">
+                    <label class="radio-inline" for="answers6">
+                        Pineapple
+                    </label>
+                    <input class="incorrect" type="radio" name="answers6" id="answers6b">
+                    <label class="radio-inline" for="answers6">
+                        Peas
+                    </label>
+                    <input class="correct" type="radio" name="answers6" id="answers6c">
+                    <label class="radio-inline" for="answers6">
+                        Anchovies
+                    </label>
+                    <input class="incorrect" type="radio" name="answers6" id="answers6d">
+                    <label class="radio-inline" for="answers6">
+                        Sausage
+                    </label>
+                </div>
+                <div id="question7">There is a part of the human brain used specifically for detecting this smell.</div>
+                <div id="answers7">
+                    <input class="correct" type="radio" name="answers7" id="answers7a">
+                    <label class="radio-inline" for="answers7">
+                        Burning Toast
+                    </label>
+                    <input class="incorrect" type="radio" name="answers7" id="answers7b">
+                    <label class="radio-inline" for="answers7">
+                        Baking Bread
+                    </label>
+                    <input class="incorrect" type="radio" name="answers7" id="answers7c">
+                    <label class="radio-inline" for="answers7">
+                        Garlic
+                    </label>
+                    <input class="incorrect" type="radio" name="answers7" id="answers7d">
+                    <label class="radio-inline">
+                        Fried Chicken
+                    </label>
+                </div>
+                <div id="question8">What was margarine clled when it was first introduced in England</div>
+                <div id="answers8">
+                    <input class="incorrect" type="radio" name="answers8" id="answers8a">
+                    <label class="radio-inline" for="answers8">
+                        Marge
+                    </label>
+                    <input class="incorrect" type="radio" name="answers8" id="answers8b">
+                    <label class="radio-inline" for="answers8">
+                        Move Over Butter
+                    </label>
+                    <input class="correct" type="radio" name="answers8" id="answers8c">
+                    <label class="radio-inline" for="answers8">
+                        Butterine
+                    </label>
+                    <input class="incorrect" type="radio" name="answers8" id="answers8d">
+                    <label class="radio-inline" for="answers8">
+                        Oleo
+                    </label>
+                </div>
+            
         </div>
     </div>
 
